@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Nunito";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url("../img/background.jpeg") no-repeat;
+  background-size: cover; }
+  body:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #2229;
+    z-index: -1; }
+
+nav {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  min-height: 100vh;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
+  nav .nav-ul {
+    margin: 0;
+    list-style: none;
+    padding: 0; }
+    nav .nav-ul a {
+      color: #fff;
+      text-decoration: none; }
+    nav .nav-ul .nav-li {
+      padding: 30px; }
+      nav .nav-ul .nav-li:hover {
+        background: #08f;
+        transition: all 0.2s ease-in-out; }
+      nav .nav-ul .nav-li.active {
+        background: #08f; }
+
+#showcase,
+#details,
+#skillset,
+#certify,
+#reach {
+  min-height: 100vh;
+  display: none;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-left: 120px;
+  position: absolute;
+  color: #fff;
+  transition: all 0.2s ease-in-out; }
+  #showcase.show,
+  #details.show,
+  #skillset.show,
+  #certify.show,
+  #reach.show {
+    display: flex; }
+  #showcase .heading h1,
+  #details .heading h1,
+  #skillset .heading h1,
+  #certify .heading h1,
+  #reach .heading h1 {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 4rem; }
+  #showcase .para,
+  #details .para,
+  #skillset .para,
+  #certify .para,
+  #reach .para {
+    padding-left: 10px;
+    color: #eece91; }
+  #showcase .links ul,
+  #details .links ul,
+  #skillset .links ul,
+  #certify .links ul,
+  #reach .links ul {
+    list-style: none;
+    padding: 0; }
+    #showcase .links ul li,
+    #details .links ul li,
+    #skillset .links ul li,
+    #certify .links ul li,
+    #reach .links ul li {
+      display: inline-block;
+      padding: 0 10px; }
+      #showcase .links ul li i.fas,
+      #details .links ul li i.fas,
+      #skillset .links ul li i.fas,
+      #certify .links ul li i.fas,
+      #reach .links ul li i.fas {
+        font-size: 2rem; }
+  #showcase .links.con ul li,
+  #details .links.con ul li,
+  #skillset .links.con ul li,
+  #certify .links.con ul li,
+  #reach .links.con ul li {
+    display: block; }
+    #showcase .links.con ul li i.fas,
+    #details .links.con ul li i.fas,
+    #skillset .links.con ul li i.fas,
+    #certify .links.con ul li i.fas,
+    #reach .links.con ul li i.fas {
+      font-size: 1.2rem; }
